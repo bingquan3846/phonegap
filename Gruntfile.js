@@ -35,7 +35,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: {
-                    'template/js/build/main.min.js': ['<%= concat.js.dest %>']
+                    'template/build/main.min.js': ['<%= concat.js.dest %>']
                 }
             }
         },

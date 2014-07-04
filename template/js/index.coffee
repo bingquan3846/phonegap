@@ -1,0 +1,2 @@
+window.test = test = ()->
+  true
