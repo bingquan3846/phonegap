@@ -44,7 +44,7 @@ module.exports = function(grunt) {
             build: {
                 cwd: 'template/html',
                 src: [ '*.html' ],
-                dest: 'template/html',
+                dest: 'template/build/',
                 options: {
                     flatten: true
                 }
@@ -70,8 +70,8 @@ module.exports = function(grunt) {
                 //dest: '/Volumes/webdev01-www/uvexsportscom.webkomplize.dev/',
             },
             html: {
-                src: 'template/html/*',
-                dest: 'template/build/'
+                //src: 'template/html/*',
+                //dest: 'template/build/'
                 //dest: '/Volumes/webdev01-www/uvexsportscom.webkomplize.dev/',
             }
         },
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
                 }
             },
             html: {
-                files: ['template/html/*.html'],
+                files: ['template/html/**/*.html'],
                 options: {
                     livereload: true,
                 }

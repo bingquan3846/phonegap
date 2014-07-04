@@ -14,10 +14,9 @@ $breakpoint-no-query-fallbacks: false;
 
 
 // Partials
-@import "vendor/jquery-mobile";
-
-
+@import "partials/style";
 
 
 // Third-party
 //@import "vendor/xyz";
+@import "vendor/jquery.mobile-1.4.3";
