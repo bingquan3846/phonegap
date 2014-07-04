@@ -11,17 +11,24 @@
 
 <body class="dark">
 <div data-role="header" style="overflow:hidden;">
-    <h1>Friends near your point!</h1>
+    <h1>New in Social</h1>
     <a href="#" data-icon="gear" class="ui-btn-right">Options</a>
     <div data-role="navbar">
         <ul>
-            <li><a href="#">5 km</a></li>
-            <li><a href="#">15 km</a></li>
-            <li><a href="#">50 km</a></li>
+            <li><a href="#">Tumblr</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
         </ul>
     </div><!-- /navbar -->
 </div><!-- /header -->
+<div id="option">
+        <label for="tag">Tag:</label>
+        <input data-clear-btn="true" name="tag" id="tag" value="" type="text">
+        <label for="user">User:</label>
+        <input data-clear-btn="true" name="user" id="user" value="" type="text">
+</div>
 <div>
+
    <div id="map-canvas"></div>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
