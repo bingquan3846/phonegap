@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+////////////////////////////////////////////////////////////////////////////////
+// Page Styling
+// --------------------
+// This file combines all partials into one main style sheet, to be loaded on
+// all pages.
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+$breakpoint-no-queries: false;
+$breakpoint-no-query-fallbacks: false;
+
+
+// Partials
+@import "vendor/jquery-mobile";
+
+
+
+
+// Third-party
+//@import "vendor/xyz";
