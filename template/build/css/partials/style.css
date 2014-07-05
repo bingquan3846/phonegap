@@ -1,1 +1,10 @@
-.topcoat-navigation-bar{position:absolute;width:100%}#option{padding:0 10px}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bbq\/projects\/phonegap\/template\/css\/sass\/partials\/style\.scss}line{font-family:\000031}}
+.topcoat-navigation-bar {
+  position: absolute;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bbq\/projects\/phonegap\/template\/css\/sass\/partials\/style\.scss}line{font-family:\000037}}
+#option {
+  padding: 0 10px;
+}

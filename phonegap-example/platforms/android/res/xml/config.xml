@@ -4,12 +4,12 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>HelloWorld</name>
+    <name>New in Social</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        find new posts in the social website , facebook, twitter and so on.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="bingquan3846@gmail.com" href="http://blog.de2ch.com">
+        Bingquan Bao
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />

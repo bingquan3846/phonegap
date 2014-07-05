@@ -1,4 +1,4 @@
-/home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/HelloWorld.ap_ \
+/home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/NewinSocial.ap_ \
  : /home/bbq/projects/phonegap/phonegap-example/platforms/android/res/drawable/icon.png \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/res/drawable-hdpi/icon.png \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/res/drawable-mdpi/icon.png \
@@ -26,6 +26,8 @@
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/res \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/img \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/js/index.js \
+/home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/js/jquery-1.10.2.min.js \
+/home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/js/jquery.mobile-1.4.2.min.js \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/spec/lib \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/spec/index.js \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/spec/helper.js \
@@ -35,6 +37,7 @@
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.js \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine-html.js \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/css/index.css \
+/home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/css/main.css \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/res/screen \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/res/icon \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/assets/www/res/screen/ios \

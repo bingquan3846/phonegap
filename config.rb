@@ -3,12 +3,12 @@
 #
 
 # Change this to :production when ready to deploy the CSS to the live server.
-#environment = :development
-environment = :production
+environment = :development
+#environment = :production
 
 # In development, we can turn on the FireSass-compatible debug_info.
-firesass = false
-#firesass = true
+#firesass = false
+firesass = true
 
 
 css_dir = "template/build/css"
@@ -16,7 +16,7 @@ sass_dir = "template/css/sass"
 images_dir = "template/css/img"
 extensions_dir  = "template/css/sass-extensions"
 
-require 'singularitygs'
+#require 'singularitygs'
 
 ##
 ## You probably don't need to edit anything below this.

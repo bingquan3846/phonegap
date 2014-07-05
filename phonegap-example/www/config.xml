@@ -6,14 +6,14 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>HelloWorld</name>
+    <name>New in Social</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        find new posts in the social website , facebook, twitter and so on.
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://blog.de2ch.com" email="bingquan3846@gmail.com">
+        Bingquan Bao
     </author>
 
     <!--

@@ -1,6 +1,6 @@
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/classes.dex : \
-/home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/classes/com/phonegap/helloworld/HelloWorld.class \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/classes/com/phonegap/helloworld/BuildConfig.class \
+/home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/classes/com/phonegap/helloworld/NewinSocial.class \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/classes/com/phonegap/helloworld/R$drawable.class \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/classes/com/phonegap/helloworld/R.class \
 /home/bbq/projects/phonegap/phonegap-example/platforms/android/ant-build/classes/com/phonegap/helloworld/R$xml.class \

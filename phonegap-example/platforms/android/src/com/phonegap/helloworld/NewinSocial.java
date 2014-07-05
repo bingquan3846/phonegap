@@ -22,7 +22,7 @@ package com.phonegap.helloworld;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class HelloWorld extends CordovaActivity 
+public class NewinSocial extends CordovaActivity 
 {
     @Override
     public void onCreate(Bundle savedInstanceState)

@@ -22,18 +22,41 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name='viewport' content='width=device-width'/>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script>
+            $(document).on('pageinit','[data-role=page]',function(){
+                $('#option-button').bind('click', function(event, ui) {
+                    if($('#option').css('display') == "none" ){
+                        $('#option').slideDown();
+                    }else{
+                        $('#option').slideUp();
+                    }
+                });
+            });
+        </script>
         <title>Hello World</title>
     </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+    <body class="black">
+    <div data-role="header" style="overflow:hidden;">
+        <h1>New in Social</h1>
+        <a href="#" data-icon="gear" class="ui-btn-right" id="option-button">Options</a>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#">Tumblr</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+    <div id="option" style="display: none">
+        <label for="tag">Tag:</label>
+        <input data-clear-btn="true" name="tag" id="tag" value="" type="text">
+        <label for="user">User:</label>
+        <input data-clear-btn="true" name="user" id="user" value="" type="text">
+    </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
