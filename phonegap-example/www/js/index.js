@@ -16,6 +16,26 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+// onSuccess Callback
+// This method accepts a Position object, which contains the
+// current GPS coordinates
+//
+var longitude,latitude;
+var onSuccess = function(position) {
+    longitude = position.coords.longitude;
+    latitude  = position.coords.latitude;
+};
+
+// onError Callback receives a PositionError object
+//
+function onError(error) {
+    alert('code: '    + error.code    + '\n' +
+        'message: ' + error.message + '\n');
+}
+
+navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -34,6 +54,10 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        alert(longitude);
+
+        //navigator.geolocation.getCurrentPosition(this.onSuccess, this.onError);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

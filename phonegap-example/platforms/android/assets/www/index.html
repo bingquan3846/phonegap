@@ -36,16 +36,37 @@
                     }
                 });
             });
+            $(document).ready(function(){
+                navigator.geolocation.getCurrentPosition(onSuccess, onError);
+                function onSuccess(position){
+                    alert('hi');
+                    $.ajax({
+                        url: 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude,
+                        success:function (data) {
+                            var temp = data.main.temp - 273.15;
+                            //var html = data.weather[0].main + ',' + temp + '°C'; 
+                            alert(temp);
+                            //$('#weather').html(html);
+                        }
+                    });
+                   
+                }
+                function onError(error){
+                    alert(error);
+                }
+
+            });
+
         </script>
-        <title>Hello World</title>
+        <title>what is new in your social network</title>
     </head>
     <body class="black">
     <div data-role="header" style="overflow:hidden;">
         <h1>New in Social</h1>
-        <a href="#" data-icon="gear" class="ui-btn-right" id="option-button">Options</a>
+        <a href="#" data-icon="plus" class="ui-btn-right" id="option-button">Options</a>
         <div data-role="navbar">
             <ul>
-                <li><a href="#">Tumblr</a></li>
+                <li><a href="#" class="ui-link ui-btn ui-btn-active">Tumblr</a></li>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Twitter</a></li>
             </ul>
@@ -56,6 +77,9 @@
         <input data-clear-btn="true" name="tag" id="tag" value="" type="text">
         <label for="user">User:</label>
         <input data-clear-btn="true" name="user" id="user" value="" type="text">
+    </div>
+    <div id="weather">
+    weather
     </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
