@@ -36,26 +36,6 @@
                     }
                 });
             });
-            $(document).ready(function(){
-                navigator.geolocation.getCurrentPosition(onSuccess, onError);
-                function onSuccess(position){
-                    alert('hi');
-                    $.ajax({
-                        url: 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude,
-                        success:function (data) {
-                            var temp = data.main.temp - 273.15;
-                            //var html = data.weather[0].main + ',' + temp + '°C'; 
-                            alert(temp);
-                            //$('#weather').html(html);
-                        }
-                    });
-                   
-                }
-                function onError(error){
-                    alert(error);
-                }
-
-            });
 
         </script>
         <title>what is new in your social network</title>
