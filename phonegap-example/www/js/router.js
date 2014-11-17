@@ -39,19 +39,24 @@ define([
         });
     });
     $( "#tag " ).change(function() {
-        var tagView = new TagView($(this).val());
-        tagView.render();
+        showTagView($(this).val(),$('#user').val());
+    });
+    $( "#user " ).change(function() {
+          showTagView($('#tag').val(), $(this).val());
     });
 
     app_router.on('route:defaultAction', function (actions) {
 
-          var tagView = new TagView('dog');
-          tagView.render();
+         showTagView('dog','');
     });
 
 
     Backbone.history.start();
   };
+  var showTagView = function(tag,user){
+      var tagView = new TagView(tag, user);
+      tagView.render();
+  }
   return { 
     initialize: initialize
   };

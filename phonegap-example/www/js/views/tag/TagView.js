@@ -9,10 +9,10 @@ define([
     var TagView = Backbone.View.extend({
         el: $("#page"),
 
-        initialize: function(keyword) {
+        initialize: function(keyword,user) {
 
             var that = this;
-            var options = {query: keyword}
+            var options = {query: keyword,blog:user}
 
 
             var onDataHandler = function(collection) {
@@ -25,12 +25,19 @@ define([
         },
 
         render: function(){
-
-            var data = {
-                posts: this.model.toJSON(),
+            if(this.model.blog == ''){
+                var data = {
+                    posts: this.model.toJSON(),
+                    _: _
+                };
+            }else{
+                var data = {
+                    posts: this.model.toJSON().posts,
                 _: _
             };
-            console.log(data);
+            }
+            //console.log(this.model.toJSON());
+
 
 
             var compiledTemplate = _.template( tagTemplate, data );
