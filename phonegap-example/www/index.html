@@ -24,20 +24,7 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name='viewport' content='width=device-width'/>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/jquery.mobile-1.4.2.min.js"></script>
-        <script>
-            $(document).on('pageinit','[data-role=page]',function(){
-                $('#option-button').bind('click', function(event, ui) {
-                    if($('#option').css('display') == "none" ){
-                        $('#option').slideDown();
-                    }else{
-                        $('#option').slideUp();
-                    }
-                });
-            });
-
-        </script>
+        <script data-main="js/main" src="js/libs/require/require.js"></script>
         <title>what is new in your social network</title>
     </head>
     <body class="black">
@@ -58,13 +45,10 @@
         <label for="user">User:</label>
         <input data-clear-btn="true" name="user" id="user" value="" type="text">
     </div>
-    <div id="weather">
-    weather
-    </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+    <ul data-role="listview" class="ui-listview" id="page">
+
+    </ul>
+
+     <script type="text/javascript" src="phonegap.js"></script>
     </body>
 </html>

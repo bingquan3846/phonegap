@@ -7,6 +7,7 @@ require.config({
     paths: {
         jquery: 'libs/jquery/jquery-1.10.2.min',
         jquerymobile: 'libs/jquery/jquery.mobile-1.4.2.min',
+        phonegap:'phonegap',
         transit: 'libs/jquery/jquery.transit.min',
         underscore: 'libs/underscore/underscore-min',
         backbone: 'libs/backbone/backbone-min',

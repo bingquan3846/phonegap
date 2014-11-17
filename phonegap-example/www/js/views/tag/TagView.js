@@ -30,11 +30,7 @@ define([
                 posts: this.model.toJSON(),
                 _: _
             };
-            console.log(data.posts);
-            $('#loader').css('display', 'block')
-            $('#loader').delay(800).fadeOut('slow');
-
-            //console.log(data.posts[0].blog_name);
+            console.log(data);
 
 
             var compiledTemplate = _.template( tagTemplate, data );
