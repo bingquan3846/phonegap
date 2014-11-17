@@ -9,10 +9,10 @@ define([
     var TagView = Backbone.View.extend({
         el: $("#page"),
 
-        initialize: function() {
+        initialize: function(keyword) {
 
             var that = this;
-            var options = {query: 'cat'}
+            var options = {query: keyword}
 
 
             var onDataHandler = function(collection) {

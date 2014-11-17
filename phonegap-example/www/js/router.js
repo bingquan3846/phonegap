@@ -23,14 +23,32 @@ define([
 
     var app_router = new AppRouter;
 
-
+    $( document ).bind( "mobileinit", function() {
+        // Make your jQuery Mobile framework configuration changes here!
+        $.support.cors = true;
+        $.mobile.allowCrossDomainPages = true;
+    });
+    $(document).on('pageinit','[data-role=page]',function(){
+        
+        $('#option-button').bind('click', function(event, ui) {
+            if($('#option').css('display') == "none" ){
+                $('#option').slideDown();
+            }else{
+                $('#option').slideUp();
+            }
+        });
+    });
+    $( "#tag " ).change(function() {
+        var tagView = new TagView($(this).val());
+        tagView.render();
+    });
 
     app_router.on('route:defaultAction', function (actions) {
-     
-       // We have no matching route, lets display the home page 
-          var tagView = new TagView();
+
+          var tagView = new TagView('dog');
           tagView.render();
     });
+
 
     Backbone.history.start();
   };

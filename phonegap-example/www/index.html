@@ -24,7 +24,7 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name='viewport' content='width=device-width'/>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <script data-main="js/main" src="js/libs/require/require.js"></script>
+        <script data-main="js/main" src="js/libs/require/require.js" type="text/javascript"></script>
         <title>what is new in your social network</title>
     </head>
     <body class="black">
@@ -33,9 +33,9 @@
         <a href="#" data-icon="plus" class="ui-btn-right" id="option-button">Options</a>
         <div data-role="navbar">
             <ul>
-                <li><a href="#" class="ui-link ui-btn ui-btn-active">Tumblr</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li ><a href="#" data-icon="star" class="ui-link ui-btn ui-btn-active">Tumblr</a></li>
+                <li ><a href="#" data-icon="star">Facebook</a></li>
+                <li><a href="#" data-icon="star">Twitter</a></li>
             </ul>
         </div><!-- /navbar -->
     </div><!-- /header -->
@@ -48,7 +48,5 @@
     <ul data-role="listview" class="ui-listview" id="page">
 
     </ul>
-
-     <script type="text/javascript" src="phonegap.js"></script>
     </body>
 </html>
