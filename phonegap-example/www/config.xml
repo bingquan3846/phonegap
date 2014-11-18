@@ -24,7 +24,7 @@
     <feature name="http://api.phonegap.com/1.0/geolocation" />
     <feature name="debug-server" required="true">
         <param name="domain" value="http://localhost:8080"/>
-        <param name="key" value="newinsocial"/>
+        <param name="key" value="newsinsocial"/>
     </feature>
 
     <!--

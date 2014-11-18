@@ -28,8 +28,8 @@
         <title>what is new in your social network</title>
     </head>
     <body class="black">
-    <div data-role="header" style="overflow:hidden;">
-        <h1>New in Social</h1>
+    <div data-role="header" style="overflow:hidden;" data-id="foo1" data-position="fixed">
+        <h1>News in Social</h1>
         <a href="#" data-icon="plus" class="ui-btn-right" id="option-button">Options</a>
         <div data-role="navbar">
             <ul>
@@ -38,13 +38,14 @@
                 <li><a href="#" data-icon="star">Twitter</a></li>
             </ul>
         </div><!-- /navbar -->
+        <div id="option" style="display: none">
+            <label for="tag">Tag:</label>
+            <input data-clear-btn="true" name="tag" id="tag" value="" type="text">
+            <label for="user">User:</label>
+            <input data-clear-btn="true" name="user" id="user" value="" type="text">
+        </div>
     </div><!-- /header -->
-    <div id="option" style="display: none">
-        <label for="tag">Tag:</label>
-        <input data-clear-btn="true" name="tag" id="tag" value="" type="text">
-        <label for="user">User:</label>
-        <input data-clear-btn="true" name="user" id="user" value="" type="text">
-    </div>
+
     <ul data-role="listview" class="ui-listview" id="page">
 
     </ul>

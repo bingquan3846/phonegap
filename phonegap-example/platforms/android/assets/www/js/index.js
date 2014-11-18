@@ -54,8 +54,10 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
         alert(longitude);
+        $.ajax('http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude, function (response) {
+             alert('http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude);
+        });
 
         //navigator.geolocation.getCurrentPosition(this.onSuccess, this.onError);
     },

@@ -11,12 +11,6 @@
     <author email="bingquan3846@gmail.com" href="http://blog.de2ch.com">
         Bingquan Bao
     </author>
-    <feature name="http://api.phonegap.com/1.0/device" />
-    <feature name="http://api.phonegap.com/1.0/geolocation" />
-    <feature name="debug-server" required="true">
-        <param name="domain" value="http://localhost:8080" />
-        <param name="key" value="newinsocial" />
-    </feature>
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />

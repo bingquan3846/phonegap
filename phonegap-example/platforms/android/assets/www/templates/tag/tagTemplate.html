@@ -1,0 +1,13 @@
+<% _.each(posts, function(post){ %>
+            <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html" class="ui-link-inherit">
+                
+<% if (typeof(post.photos) != "undefined") { %>
+
+<img src="<%= post.photos[0].alt_sizes[0].url %> "   class="ui-li-thumb">
+<% }else{ %>
+NONE
+<% } %>
+                <h3 class="ui-li-heading"><a href='<%= post.post_url %>' target="blank"><%= post.blog_name %></a></h3>
+                <p class="ui-li-desc"><%= post.caption %></p>
+            </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+<% }); %>
